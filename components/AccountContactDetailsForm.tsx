@@ -64,8 +64,6 @@ const AccountContactDetailsForm: React.FC<AccountContactDetailsFormProps> = ({ f
                         className="text-black border-2 rounded-lg border-inherit w-full h-40 p-2 hover:border-violet-400 text-sm md:text-base"
                         placeholder="Please include any other additional information that we may need to know regarding invoicing and billing (such as key dates, availability etc)."
                     ></textarea>
-                    <button>heyyyyy</button>
-
                 </div>
 
             </div>
