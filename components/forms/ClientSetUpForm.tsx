@@ -63,13 +63,11 @@ const ClientSetUpForm: React.FC = () => {
            
       };
 
-
       const isFormValid = useCallback(() => {
         // Perform additional validation if needed
         return !emailError && !telephoneError;
       }, [emailError]);
-    
-    
+  
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (isFormValid()) {
@@ -82,8 +80,7 @@ const ClientSetUpForm: React.FC = () => {
           setFormData(initialFormData);
         } else {
           console.log('Form is invalid. Please fix errors before submitting.');
-        }
-        
+        }  
       };
 
     return (
@@ -117,6 +114,7 @@ const ClientSetUpForm: React.FC = () => {
                     <span className="text-sm text-green-600">Send me marketing emails from Vouch</span>
                 </label>
             </div>
+            
                 <div className="flex justify-center mb-7">
                     <button type="submit" className="bg-violet-500 text-white px-7 py-2 rounded-md">Submit</button>
                 </div>
