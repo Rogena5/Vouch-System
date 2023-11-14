@@ -90,7 +90,7 @@ function JobSetup() {
     };
 
     return (
-        <div className='container mx-auto px-20'>
+        <div className='container mx-auto  px-4 sm:px-6 lg:px-8'>
             <div className='first-box bg-gradient-to-r from-purple-50 to-indigo-100 p-10 border border-violet-50 rounded-xl mb-7'>
                 <div className='header-JobSetup mb-7'>
                     <h3 className='text-xl md:text-3xl text-black'>Mark Joseph </h3>
@@ -228,8 +228,8 @@ function JobSetup() {
                     </div>
                 </div>
                 {/* ___________ upload files ______________ */}
-                <div className='px-10 mb-4 flex'>
-                    <div className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4'>
+                <div className='px-4 sm:px-6 lg:px-8 mb-4 flex flex-wrap gap-4'>
+                    <div className='w-full sm:w-1/2 lg:w-1/3 xl:w-1/4'>
                         <input
                             type='file'
                             accept='.pdf, .doc, .docx'
@@ -239,7 +239,7 @@ function JobSetup() {
                         />
                         <label
                             htmlFor='ContractUploadFile'
-                            className='w-full md:w-2/3 cursor-pointer flex items-center text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
+                            className='w-full cursor-pointer flex items-center text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
                         >
                             <BsArrowBarUp className='mr-2' /> Contract Upload
                         </label>
@@ -250,8 +250,7 @@ function JobSetup() {
                         )}
                     </div>
 
-                    {/* second upload button */}
-                    <div className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4'>
+                    <div className='w-full sm:w-1/2 lg:w-1/3 xl:w-1/4'>
                         <input
                             type='file'
                             accept='.pdf, .doc, .docx'
@@ -261,7 +260,7 @@ function JobSetup() {
                         />
                         <label
                             htmlFor='AnotherFileUpload'
-                            className='w-full md:w-2/3 flex items-center cursor-pointer text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
+                            className='w-full cursor-pointer flex items-center text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
                         >
                             <BsArrowBarUp className='mr-2' /> Another File Upload
                         </label>
@@ -271,8 +270,8 @@ function JobSetup() {
                             </p>
                         )}
                     </div>
-                    {/*  */}
                 </div>
+
                 {/* ___________ Links ______________ */}
                 <div className='px-10 text-blue-700'>
                     <div> <Link href="/briefing-answers" className='underline'>All Briefing Answers</Link></div>
