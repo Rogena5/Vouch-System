@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import YourFormDataInterface from './DataTypes/ClientAccessFormDataInterface';
-import googleAds from '../public/images/pngegg (1) 1.png'
+import googleTag from '../public/images/drive.png'
 interface GoogleAdsProps {
     formData: YourFormDataInterface;
     handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -9,13 +9,14 @@ interface GoogleAdsProps {
 
 const GoogleAds: React.FC<GoogleAdsProps> = ({ formData, handleChange }) => {
     return (
-        <> <div className='GoogleAds mb-10 mt-4'>
-            <div className='flex gap-2 items-center mb-4'>
-                <div> <Image src={googleAds} alt="" width={40} className='h-auto' /></div>
+        <>
+         <div className='GoogleAds mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
+                <div className='flex gap-2 items-center mb-4'>
+                <div> <Image src={googleTag} alt="" width={40} className='h-auto' /></div>
                 <div className='text-1xl md:text-2xl text-black'> Google Ads </div>
             </div>
 
-            <p className='text-md text-gray-400 mb-2'>To provide access to Google Ads, please login to your Google Ads account and invite us as a user by following the steps below:
+            <p className='text-sm md:text-md text-gray-400 mb-2'>To provide access to Google Ads, please login to your Google Ads account and invite us as a user by following the steps below:
                 Head to Tools and Settings
                 Click Account Access and Security
                 Add our account digital@vouchglobal.com as a user.</p>

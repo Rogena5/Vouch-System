@@ -8,9 +8,9 @@ interface TrackingProps {
 
 const Tracking: React.FC<TrackingProps> = ({ formData, handleChange }) => {
     return (
-        <><div className='Tracking mb-10 mt-4'>
+        <><div className='Tracking mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
             <h3 className='text-1xl md:text-2xl text-black mb-4'>Tracking</h3>
-            <p className='text-md text-gray-400 mb-2'>If you do not have Google Tag Manager on the website and the availble login credentials, are you happy to provide us with login access to the website?</p>
+            <p className='text-sm md:text-md text-gray-400 mb-2'>If you do not have Google Tag Manager on the website and the availble login credentials, are you happy to provide us with login access to the website?</p>
             <Link href="" className='text-blue-600'>Here is a video guide</Link>
             <div className='radio-buttons flex items-center gap-2 mb-7 mt-4'>
                 <label className={`inline-flex items-center ${formData.tracking === 'Completed' ? 'text-green-600' : ''}`}>

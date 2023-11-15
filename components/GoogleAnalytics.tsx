@@ -10,12 +10,13 @@ interface GoogleAnalyticsProps {
 
 const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = ({ formData, handleChange }) => {
     return (
-        <><div className='GoogleAnalytics mb-10 mt-4'>
-            <div className='flex gap-2 items-center mb-4'>
+        <>
+        <div className='GoogleAnalytics mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
+                <div className='flex gap-2 items-center mb-4'>
                 <div> <Image src={googleAnalytics} alt="" width={40} className='h-auto' /></div>
                 <div className='text-1xl md:text-2xl text-black'>Google Analytics</div>
             </div>
-            <p className='text-md text-gray-400 mb-2'>We require access to GA4 so we can check the set up of the events and track website traffic. We also occasionally use GA4 audience segments to support audience targeting on Google Ads.
+            <p className='text-sm md:text-md text-gray-400 mb-2'>We require access to GA4 so we can check the set up of the events and track website traffic. We also occasionally use GA4 audience segments to support audience targeting on Google Ads.
                 To grant access, please could you login to your GA4 account and follow these steps:
                 Click the Admin settings button
                 Select Property Access Management
