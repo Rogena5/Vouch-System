@@ -10,7 +10,7 @@ interface GoogleAdsProps {
 const GoogleAds: React.FC<GoogleAdsProps> = ({ formData, handleChange }) => {
     return (
         <>
-         <div className='GoogleAds mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
+         <div className='GoogleAds mb-10 mt-4'>
                 <div className='flex gap-2 items-center mb-4'>
                 <div> <Image src={googleTag} alt="" width={40} className='h-auto' /></div>
                 <div className='text-1xl md:text-2xl text-black'> Google Ads </div>

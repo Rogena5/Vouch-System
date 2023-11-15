@@ -8,7 +8,7 @@ interface TrackingProps {
 
 const Tracking: React.FC<TrackingProps> = ({ formData, handleChange }) => {
     return (
-        <><div className='Tracking mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
+        <><div className='Tracking mb-10 mt-4 '>
             <h3 className='text-1xl md:text-2xl text-black mb-4'>Tracking</h3>
             <p className='text-sm md:text-md text-gray-400 mb-2'>If you do not have Google Tag Manager on the website and the availble login credentials, are you happy to provide us with login access to the website?</p>
             <Link href="" className='text-blue-600'>Here is a video guide</Link>

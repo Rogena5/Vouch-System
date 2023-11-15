@@ -11,7 +11,7 @@ interface TiktokProps {
 const Tiktok: React.FC<TiktokProps> = ({ formData, handleChange }) => {
     return (
         <>
-             <div className='TikTok mb-10 mt-4 md:w-1/2 lg:w-1/2 xl:w-full'>
+             <div className='TikTok mb-10 mt-4'>
                 <div className='flex gap-2  items-center mb-4'>
                     <div>
                         <Image src={tiktok} alt="" width={40} className='h-auto' />
