@@ -91,6 +91,7 @@ function JobSetup() {
 
     return (
         <div className='container mx-auto  px-4 sm:px-6 lg:px-8'>
+            {/* _________________________ first form ___________________ */}
             <div className='first-box bg-gradient-to-r from-purple-50 to-indigo-100 p-10 border border-violet-50 rounded-xl mb-7'>
                 <div className='header-JobSetup mb-7'>
                     <h3 className='text-xl md:text-3xl text-black'>Mark Joseph </h3>
@@ -131,7 +132,6 @@ function JobSetup() {
                 <div className='header-JobSetup mb-7 bg-violet-500 rounded-2xl p-10 text-white text-md md:text-xl font-semibold'>
                     Main Point Of Contact
                 </div>
-
                 {/* data */}
                 <div className='form-jobSetup grid md:grid-cols-3 grid-cols-1 gap-4 mb-7 mt-4 px-10'>
                     <div className='name '>
@@ -199,7 +199,6 @@ function JobSetup() {
                 <div className='header-JobSetup mb-7 bg-violet-500 rounded-2xl p-10 text-white text-md md:text-xl font-semibold'>
                     Activity Kick Off
                 </div>
-
                 {/* data */}
                 <div className='form-jobSetup grid md:grid-cols-3 grid-cols-1 gap-4 mb-7 mt-4 px-10'>
                     <div className='name '>
@@ -281,22 +280,22 @@ function JobSetup() {
                 <div className='mt-4 mb-7 radio-buttons flex flex-col gap-2 mx-10'>
                     <label className={`inline-flex items-center ${formData.agreeWorkflow === 'check' ? 'text-green-600' : ''}`}>
                         <div
-                            className={`w-5 h-5 border rounded-md flex items-center justify-center mr-2 ${formData.agreeWorkflow === 'check' ? 'bg-green-600' : 'bg-white border-gray-400'}`}
+                            className={`w-5 h-5 border-2 rounded-sm flex items-center justify-center mr-2 ${formData.agreeWorkflow === 'check' ? 'border-green-600' : 'bg-white border-green-600'}`}
                             onClick={() => handleChange({ target: { name: 'agreeWorkflow', value: formData.agreeWorkflow === 'check' ? 'noCheck' : 'check' } } as React.ChangeEvent<HTMLInputElement>)}
                         >
                             {formData.agreeWorkflow === 'check' && (
-                                <span className="text-white">&#10003;</span>
+                                <span className="text-green-600">&#10003;</span>
                             )}
                         </div>
                         <span className="text-sm text-green-600">Main Point of Contact - Send me workflow update emails</span>
                     </label>
                     <label className={`inline-flex items-center ${formData.agreeEmails === 'check' ? 'text-green-600' : ''}`}>
                         <div
-                            className={`w-5 h-5 border rounded-md flex items-center justify-center mr-2 ${formData.agreeEmails === 'check' ? 'bg-green-600' : 'bg-white border-gray-400'}`}
+                            className={`w-5 h-5 border-2 rounded-sm flex items-center justify-center mr-2 ${formData.agreeEmails === 'check' ? 'border-green-600' : 'bg-white border-green-600'}`}
                             onClick={() => handleChange({ target: { name: 'agreeEmails', value: formData.agreeEmails === 'check' ? 'noCheck' : 'check' } } as React.ChangeEvent<HTMLInputElement>)}
                         >
                             {formData.agreeEmails === 'check' && (
-                                <span className="text-white">&#10003;</span>
+                                <span className="text-green-600">&#10003;</span>
                             )}
                         </div>
                         <span className="text-sm text-green-600">Send me marketing emails from Vouch</span>

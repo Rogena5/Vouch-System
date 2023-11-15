@@ -268,11 +268,11 @@ const OnBoardNewClient = () => {
                     {Object.keys(checkboxes).map((name, index) => (
                         <div key={index} className="flex items-center mb-2">
                             <div
-                                className={`w-5 h-5 border rounded-md flex items-center justify-center mr-2 ${checkboxes[name as keyof typeof checkboxes] ? 'bg-violet-600' : 'bg-white border-gray-400'
+                                className={`w-5 h-5 border-2 rounded-sms flex items-center justify-center mr-2 ${checkboxes[name as keyof typeof checkboxes] ? 'border-violet-600' : 'bg-white border-violet-600'
                                     }`}
                                 onClick={() => handleCheckboxToggle(name as keyof typeof checkboxes)}
                             >
-                                {checkboxes[name as keyof typeof checkboxes] && <span className="text-white">&#10003;</span>}
+                                {checkboxes[name as keyof typeof checkboxes] && <span className="text-violet-600">&#10003;</span>}
                             </div>
                             <label className={`block text-sm md:text-base font-semibold text-violet-400`}>
                                 {name}

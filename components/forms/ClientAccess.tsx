@@ -63,11 +63,17 @@ const ClientAccess: React.FC = () => {
         <div className='container mx-auto px-20'>
             <form onSubmit={handleFormSubmit}>
                 <MetaData formData={formData} handleChange={handleChange} />
+                <hr/>
                 <GoogleAds formData={formData} handleChange={handleChange} />
+                <hr/>
                 <GoogleTag formData={formData} handleChange={handleChange} />
+                <hr/>
                 <Tiktok formData={formData} handleChange={handleChange} />
+                <hr/>
                 <GoogleAnalytics formData={formData} handleChange={handleChange} />
+                <hr/>
                 <Tracking formData={formData} handleChange={handleChange} />
+                <hr/>
                 <AdditionalInfo formData={formData} handleChange={handleChange} />
                 <MarketingPreferences formData={formData} handleChange={handleChange} />
                 <div className="flex justify-center mb-7">
