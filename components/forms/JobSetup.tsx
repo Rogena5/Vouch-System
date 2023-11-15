@@ -240,7 +240,7 @@ function JobSetup() {
                             htmlFor='ContractUploadFile'
                             className='w-full cursor-pointer flex items-center text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
                         >
-                            <BsArrowBarUp className='mr-2' /> Contract Upload
+                            <BsArrowBarUp className='mr-2 text-violet-600' /> Contract Upload
                         </label>
                         {selectedFile1 && (
                             <p className='text-sm md:text-md text-black font-semibold'>
@@ -261,7 +261,7 @@ function JobSetup() {
                             htmlFor='AnotherFileUpload'
                             className='w-full cursor-pointer flex items-center text-sm md:text-md text-gray-400 font-semibold border border-indigo-300 p-2 rounded-md'
                         >
-                            <BsArrowBarUp className='mr-2' /> Another File Upload
+                            <BsArrowBarUp className='mr-2 text-violet-600' /> Another File Upload
                         </label>
                         {selectedFile2 && (
                             <p className='text-sm md:text-md text-black font-semibold'>
