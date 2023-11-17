@@ -63,13 +63,11 @@ const ClientSetUpForm: React.FC = () => {
            
       };
 
-
       const isFormValid = useCallback(() => {
         // Perform additional validation if needed
         return !emailError && !telephoneError;
       }, [emailError]);
-    
-    
+  
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (isFormValid()) {
@@ -82,8 +80,7 @@ const ClientSetUpForm: React.FC = () => {
           setFormData(initialFormData);
         } else {
           console.log('Form is invalid. Please fix errors before submitting.');
-        }
-        
+        }  
       };
 
     return (
@@ -95,11 +92,11 @@ const ClientSetUpForm: React.FC = () => {
                 <div className='mt-4 mb-7 radio-buttons flex flex-col gap-2'>
                 <label className={`inline-flex items-center ${formData.agreeWorkflow === 'check' ? 'text-green-600' : ''}`}>
                     <div
-                        className={`w-5 h-5 border rounded-md flex items-center justify-center mr-2 ${formData.agreeWorkflow === 'check' ? 'bg-green-600' : 'bg-white border-gray-400'}`}
+                        className={`w-5 h-5 border-2 rounded-sm  flex items-center justify-center mr-2 ${formData.agreeWorkflow === 'check' ? 'border-green-600' : 'bg-white border-green-600'}`}
                         onClick={() => handleChange({ target: { name: 'agreeWorkflow', value: formData.agreeWorkflow === 'check' ? 'noCheck' : 'check' } } as React.ChangeEvent<HTMLInputElement>)}
                     >
                         {formData.agreeWorkflow === 'check' && (
-                            <span className="text-white">&#10003;</span>
+                            <span className="text-green-600">&#10003;</span>
                         )}
                     </div>
                     <span className="text-sm text-green-600">Main Point of Contact - Send me workflow update emails</span>
@@ -107,11 +104,11 @@ const ClientSetUpForm: React.FC = () => {
 
                 <label className={`inline-flex items-center ${formData.agreeEmails === 'check' ? 'text-green-600' : ''}`}>
                     <div
-                        className={`w-5 h-5 border rounded-md flex items-center justify-center mr-2 ${formData.agreeEmails === 'check' ? 'bg-green-600' : 'bg-white border-gray-400'}`}
+                        className={`w-5 h-5 border-2 rounded-sm flex items-center justify-center mr-2 ${formData.agreeEmails === 'check' ? 'border-green-600' : 'bg-white border-green-600'}`}
                         onClick={() => handleChange({ target: { name: 'agreeEmails', value: formData.agreeEmails === 'check' ? 'noCheck' : 'check' } } as React.ChangeEvent<HTMLInputElement>)}
                     >
                         {formData.agreeEmails === 'check' && (
-                            <span className="text-white">&#10003;</span>
+                            <span className="text-green-600">&#10003;</span>
                         )}
                     </div>
                     <span className="text-sm text-green-600">Send me marketing emails from Vouch</span>
